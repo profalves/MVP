@@ -1,10 +1,13 @@
 const express = require('express')
-const db = require('./config/database');
 const app = express()
+
+// main routes
+const { userRoutes } = require('./routes')
+app.use(userRoutes)
+
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(require('./routes'));
 
 app.get('/', function (req, res) {
   res.json({

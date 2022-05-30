@@ -1,0 +1,14 @@
+# Requests 
+
+# Variables
+
+@hostname = 127.0.0.1
+@port = 3000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+# Users
+
+# Get all users
+
+GET http://{{host}}/ HTTP/1.1

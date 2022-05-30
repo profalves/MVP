@@ -8,7 +8,7 @@ app.use(require('./routes'));
 
 app.get('/', function (req, res) {
   res.json({
-    message: 'Welcome to trybe!'
+    message: 'Welcome to MVP Backend!'
   }).send();
 });
 
